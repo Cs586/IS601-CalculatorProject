@@ -28,7 +28,7 @@ class MyTestCase(unittest.TestCase):
 
         for row in test_data:
             self.assertEqual(self.calculator.subtract(row['Value 2'], row['Value 1']), int(row['Result']))
-            self.assertEqual(self.calculator.result, int(['Result']))
+            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_multiply_method_calculator(self):
         self.assertEqual(self.calculator.multiply(2, 2), 4)
