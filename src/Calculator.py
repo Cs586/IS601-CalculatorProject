@@ -2,7 +2,7 @@ def addition(a, b):
     return a + b
 
 def subtraction(a, b):
-    return a - b
+    return int(a) - int(b)
 
 def multiplication(a, b):
     return a * b
@@ -15,6 +15,10 @@ def squaring(a):
 
 def squarerooting(a):
     return a**.5
+
+def mean(data):
+    mean = data
+    return mean
 
 
 class Calculator:
@@ -46,3 +50,10 @@ class Calculator:
     def squareroot(self, a):
         self.result = squarerooting(a)
         return self.result
+
+class CSVStats(Calculator):
+    data = []
+
+    def __init__(self, data_file):
+        self.data = CsvReader(data_file)
+        pass
