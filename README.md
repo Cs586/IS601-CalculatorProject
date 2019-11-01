@@ -1,7 +1,7 @@
 # IS601-CalculatorProject
-IS601 MiniProject #2 - Calculator
+###IS601 MiniProject #2 - Calculator
 
-This project is capable of running 6 basic functions:
+This project is currently capable of running 6 basic functions:
 1. Addition
 2. Subtraction
 3. Multiplication
@@ -9,7 +9,26 @@ This project is capable of running 6 basic functions:
 5. Square
 6. Square Root
 
-There are built-in functions both to test the capability of the calculator, as well as a
-CSV sheet that lists values and results.
+This uses both built-in functions and a CSV sheet to test the functionality of the calculator.
 
 
+### Changelog:
+[Log.csv](./log.csv)
+
+|Hash   |User |Date/Time of Commit            |Change                                                                                                                            |
+|-------|-----|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+|05293b8|hl533|Fri, 1 Nov 2019 11:51:05 -0400 |EDIT: Made minor spacing/formatting changes per recommendation of pycharm to comply with Python standards.                        |
+|ba826c7|hl533|Thu, 31 Oct 2019 20:38:48 -0400|TASK: Created basic README file                                                                                                   |
+|eedc56f|hl533|Thu, 31 Oct 2019 20:32:55 -0400|FEATURE: Modified individual csv tests within calculatortests.py. tests run successfully now.                                     |
+|b8c51ba|hl533|Thu, 31 Oct 2019 20:19:27 -0400|FEATURE: Inserted each csv test back from the CsvTestCodes.txt file back into CalculatorTests.py                                  |
+|80a5dd2|hl533|Thu, 31 Oct 2019 20:14:11 -0400|FEATURE: Combined all csvs into single master UnitTest csv                                                                        |
+|db7b8f7|hl533|Thu, 31 Oct 2019 17:16:00 -0400|FEATURE: Added and tested each CSV Test Code and stored in CSVTestCodes.txt file. Made modifications to csv files for consistency.|
+|6a889a2|hl533|Thu, 31 Oct 2019 15:04:33 -0400|TASK: Modified Subtraction CSV Test in calculatortests.py. Was missing a Row(). Now working.                                      |
+|318f2a2|hl533|Thu, 31 Oct 2019 03:28:15 -0400|TASK: Added CsvTests and UnitTestSubtraction files, and added code to try to start using csvs in tests. Not working yet           |
+|b9cdb0e|hl533|Fri, 25 Oct 2019 08:58:26 -0400|TASK: Added CsvReader file, edited files to no longer try to use pandas, and to use csvreader instead                             |
+|86e4e8b|hl533|Fri, 18 Oct 2019 15:00:23 -0400|TASK: Added UnitTest Files                                                                                                        |
+|eb133cd|hl533|Fri, 18 Oct 2019 14:52:51 -0400|FEATURE: Added Multiplication, Division, Square, and Square Root calculator functions and tests                                   |
+|771b342|hl533|Thu, 17 Oct 2019 14:51:06 -0400|EDIT: added a missing line of code to CalculatorTests.py                                                                          |
+|1cc44cb|hl533|Thu, 17 Oct 2019 14:41:10 -0400|FEATURE: Created and wrote code for Dockerfile, Calculator.py and CalculatorTests.py                                              |
+|3ff491f|hl533|Thu, 17 Oct 2019 12:45:41 -0400|Task: Calculator from class made in Colab                                                                                         |
+|a8da4ad|hl533|Thu, 17 Oct 2019 12:09:04 -0400|Initial commit       
