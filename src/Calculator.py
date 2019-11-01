@@ -1,20 +1,26 @@
 def addition(a, b):
     return int(a) + int(b)
 
+
 def subtraction(a, b):
     return int(a) - int(b)
+
 
 def multiplication(a, b):
     return int(a) * int(b)
 
+
 def division(a, b):
-    return round((int(a) / int(b)),9)
+    return round((int(a) / int(b)), 9)
+
 
 def squaring(a):
     return int(a)**2
 
+
 def squarerooting(a):
-    return round((int(a)**.5),8)
+    return round((int(a)**.5), 8)
+
 
 class Calculator:
     result = 0
