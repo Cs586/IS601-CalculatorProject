@@ -1,5 +1,6 @@
 # IS601-CalculatorProject
-###IS601 MiniProject #2 - Calculator
+### IS601 MiniProject #2 - Calculator
+#### Contributor: Harrison Lu
 
 This project is currently capable of running 6 basic functions:
 1. Addition
