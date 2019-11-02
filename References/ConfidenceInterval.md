@@ -5,5 +5,40 @@ For example, suppose a statistician conducted a survey and computed an interval 
 
 Confidence intervals are preferred to point estimates and to interval estimates, because only confidence intervals indicate (a) the precision of the estimate and (b) the uncertainty of the estimate.
 
+How It Is Calculated
 
-Source:StatTrek.com
+https://www.mathsisfun.com/data/confidence-interval-calculator.html( click link for calculator example )
+
+The Confidence Interval formula is
+
+X  ±  Z	s
+
+√(n)
+
+Where:
+
+X is the mean
+
+Z is the Z-value from the table below
+
+s is the standard deviation
+
+n is the number of observations
+
+ Z
+
+80%	1.282
+
+85%	1.440
+
+90%	1.645
+
+95%	1.960
+
+99%	2.576
+
+99.5%	2.807
+
+99.9%	3.291
+
+Source: StatTrek.com; mathsisfun.com
