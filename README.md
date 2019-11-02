@@ -33,6 +33,12 @@ This uses both built-in functions and CSV data sheets to test the
 functionality of the calculator.
 
 
+### References:
+1. http://www.mbaexcel.com/excel/how-to-create-a-normally-distributed-set-of-random-numbers-in-excel/
+2. https://www.geeksforgeeks.com
+3. 
+
+
 ### Changelog:
 [Log.csv](./log.csv)
 
