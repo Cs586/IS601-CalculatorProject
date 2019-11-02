@@ -21,6 +21,10 @@ def squaring(a):
 def squarerooting(a):
     return round((int(a)**.5), 8)
 
+def mean(data):
+    mean = data
+    return mean
+
 
 class Calculator:
     result = 0
@@ -52,9 +56,11 @@ class Calculator:
         self.result = squarerooting(a)
         return self.result
 
-#class CSVStats(Calculator):
-    #data = []
+class CSVStats(Calculator):
+    data = []
 
-    #def __init__(self, data_file):
-        #self.data = CsvReader(data_file)
-        #pass
+    def __init__(self, data_file):
+        self.data = CsvReader(data_file)
+        pass
+
+    def mean(self, ):
