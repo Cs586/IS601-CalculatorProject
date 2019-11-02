@@ -2,7 +2,7 @@
 ### IS601 MiniProject #2 - Calculator
 #### Contributor: Harrison Lu
 
-This project is currently capable of running 6 basic functions:
+This fork of the project is currently capable of running 6 basic functions:
 1. Addition
 2. Subtraction
 3. Multiplication
