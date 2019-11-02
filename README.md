@@ -1,5 +1,5 @@
 # IS601-CalculatorProject
-### IS601 MiniProject #2 - Calculator
+### IS601 Homework - Basic Calculator
 #### Contributor: Harrison Lu
 
 This fork of the project is currently capable of running 6 basic functions:
