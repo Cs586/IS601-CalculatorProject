@@ -1,8 +1,10 @@
 # IS601-CalculatorProject
 ### IS601 MiniProject #2 - Calculator
-#### Contributor: Harrison Lu
+#### Contributors: Harrison Lu and Roberto Rivera
 
-This project is currently capable of running 6 basic functions:
+This project will have 2 parts:
+
+Basic Calculations:
 1. Addition
 2. Subtraction
 3. Multiplication
@@ -10,7 +12,25 @@ This project is currently capable of running 6 basic functions:
 5. Square
 6. Square Root
 
-This uses both built-in functions and a CSV sheet to test the functionality of the calculator.
+Statistical Functions:
+1. Population Mean
+2. Median
+3. Mode
+4. Population Standard Deviation
+5. Variance of population proportion
+6. Z-Score
+7. Standardized score
+8. Population Correlation Coefficient
+9. Confidence Interval
+10. Population Variance
+11. P Value
+12. Proportion
+13. Sample Mean
+14. Sample Standard Deviation
+15. Variance of sample proportion
+
+This uses both built-in functions and CSV data sheets to test the 
+functionality of the calculator.
 
 
 ### Changelog:
