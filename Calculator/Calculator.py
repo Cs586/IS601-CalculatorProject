@@ -1,30 +1,9 @@
-def addition(a, b):
-    return int(a) + int(b)
-
-
-def subtraction(a, b):
-    return int(a) - int(b)
-
-
-def multiplication(a, b):
-    return int(a) * int(b)
-
-
-def division(a, b):
-    return round((int(a) / int(b)), 9)
-
-
-def squaring(a):
-    return int(a)**2
-
-
-def squarerooting(a):
-    return round((int(a)**.5), 8)
-
-def mean(data):
-    mean = data
-    return mean
-
+from Calculator.Subtraction import subtraction
+from Calculator.Addition import addition
+from Calculator.Multiplication import multiplication
+from Calculator.Division import division
+from Calculator.Square import squaring
+from Calculator.SquareRoot import squarerooting
 
 class Calculator:
     result = 0
