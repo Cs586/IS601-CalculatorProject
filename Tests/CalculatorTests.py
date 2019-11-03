@@ -1,9 +1,10 @@
 import unittest
-from Calculator import Calculator
-from CsvReader import CsvReader
+
+from Calculator.Calculator import Calculator
+from CsvReader.CsvReader import CsvReader
 from pprint import pprint
 
-test_data = CsvReader('/src/UnitTestAll.csv').data
+test_data = CsvReader('Tests/Data/UnitTestAll.csv').data
 pprint(test_data)
 
 
