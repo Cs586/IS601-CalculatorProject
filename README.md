@@ -2,6 +2,8 @@
 ### IS601 MiniProject #2 - Calculator
 #### Contributors: Harrison Lu and Roberto Rivera
 
+[![Build Status](https://travis-ci.com/hl533/IS601-CalculatorProject.svg?branch=master)](https://travis-ci.com/hl533/IS601-CalculatorProject)
+
 This project will have 2 parts:
 
 Basic Calculations:
