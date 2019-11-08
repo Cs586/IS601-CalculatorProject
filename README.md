@@ -14,7 +14,10 @@ Basic Calculations:
 5. Square
 6. Square Root
 
-Statistical Functions:
+Statistical Functions: 
+
+[Link to References Directory](https://github.com/hl533/IS601-CalculatorProject/tree/master/References)
+
 1. Population Mean
 2. Median
 3. Mode
