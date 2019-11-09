@@ -4,6 +4,7 @@ from CsvReader.CsvReader import CsvReader
 
 class Statistics(Calculator):
     data = []
+    map(float, data)
 
     def __init__(self, filepath):
         self.data = CsvReader('Tests/Data/UnitTestStats.csv').data

@@ -5,6 +5,6 @@ from Calculator.Division import division
 def mean(data):
     num_values = len(data)
     total = 0
-    for num in data:
-        total = num + addition(total, num)
+    for x in data:
+        total = total + x
     return division(total, num_values)
