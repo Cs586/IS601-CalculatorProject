@@ -14,8 +14,8 @@ class MyTestCase(unittest.TestCase):
 
     def test_mean_statistics(self):
         test_data = CsvReader('Tests/Data/UnitTestStats.csv').data
-        test_mean = float(9.45)
         for row in test_data:
+            test_mean = float(9.45)
             mean = self.statistics.mean()
             self.assertEqual(mean, test_mean)
 
