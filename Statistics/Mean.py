@@ -3,8 +3,9 @@ from Calculator.Division import division
 
 
 def mean(data):
-    num_values = len(data)
+    map(float, data)
     total = 0
-    for x in data:
-        total = total + data[x]
+    num_values = len(data)
+    for num in data:
+        total = addition(total, num.values)
     return division(total, num_values)

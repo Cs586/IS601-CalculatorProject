@@ -2,6 +2,7 @@ import unittest
 from CsvReader.CsvReader import CsvReader
 from Calculator.Calculator import Calculator
 from Statistics.Statistics import Statistics
+from pprint import pprint
 # from Statistics.Answers import Answers
 
 
@@ -16,8 +17,10 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader('Tests/Data/UnitTestStats.csv').data
         for row in test_data:
             test_mean = float(9.45)
-            mean = self.statistics.mean()
+            mean = self.statistics.mean(test_data.values)
             self.assertEqual(mean, test_mean)
+            pass
+        pprint(test_data)
 
 
 if __name__ == '__main__':
