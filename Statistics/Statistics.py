@@ -7,7 +7,7 @@ class Statistics(Calculator):
     data = []
 
     def __init__(self, filepath):
-        self.data = CsvReader('Tests/Data/UnitTestStats.csv').data
+        self.data = CsvReader('Tests/Data/UnitTestStatsBaby.csv').data
         super().__init__()
 
     def mean(self, data):
