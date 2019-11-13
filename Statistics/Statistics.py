@@ -10,8 +10,8 @@ class Statistics(Calculator):
         self.data = CsvReader('Tests/Data/UnitTestStatsBaby.csv').data
         super().__init__()
 
-    def mean(self, data):
-        self.result = mean(data)
+    def mean(self, a, b, c):
+        self.result = mean(a, b, c)
         return self.result
 
     pass
