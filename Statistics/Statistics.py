@@ -1,8 +1,9 @@
 from Calculator.Calculator import Calculator
 from Statistics.Mean import mean
 from Statistics.Median import median
+from Statistics.Mode import mode
 from CsvReader.CsvReader import CsvReader
-from pprint import pprint
+
 
 class Statistics(Calculator):
     data = []
@@ -17,6 +18,10 @@ class Statistics(Calculator):
 
     def median(self, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t):
         self.result = median(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t)
+        return self.result
+
+    def mode(self, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t):
+        self.result = mode(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t)
         return self.result
 
     pass
