@@ -1,16 +1,14 @@
 from Calculator.Square import squaring
 from Calculator.Division import division
-from Statistics.Mean import mean
+from Statistics.PopulationMean import populationmean
 
 
-def variance(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t):
+def variance(num):
     try:
-        variance_list = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t]
-        variance_float = [float(i) for i in variance_list]
-        pop_mean = mean(*variance_float)
-        num_values = len(variance_float)
+        pop_mean = populationmean(num)
+        num_values = len(num)
         x = 0
-        for i in variance_float:
+        for i in num:
             x = x + squaring(i-pop_mean)
         return round(division(x, num_values), 5)
     except ZeroDivisionError:

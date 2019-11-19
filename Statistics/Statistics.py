@@ -1,5 +1,4 @@
 from Calculator.Calculator import Calculator
-from Statistics.Mean import mean
 from Statistics.Median import median
 from Statistics.Mode import mode
 from Statistics.StandardDeviation import stddev
@@ -24,6 +23,14 @@ class Statistics(Calculator):
 
     def mode(self, data):
         self.result = mode(data)
+        return self.result
+
+    def stddev(self, data):
+        self.result = stddev(data)
+        return self.result
+
+    def variance(self, data):
+        self.result = variance(data)
         return self.result
 
     pass

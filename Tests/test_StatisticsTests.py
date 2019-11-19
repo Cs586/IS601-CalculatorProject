@@ -7,8 +7,8 @@ from pprint import pprint
 
 class MyTestCase(unittest.TestCase):
     testing = CsvReader('Tests/Data/Test_Data2.csv').data
-    column1 = [int(row['data1']) for row in testing]
-    column2 = [int(row['data2']) for row in testing]
+    column1 = [int(row['value1']) for row in testing]
+    column2 = [int(row['value2']) for row in testing]
     test_answer = CsvReader('Tests/Data/UnitTestStatsAnswers.csv').data
 
     def setUp(self) -> None:
@@ -37,6 +37,18 @@ class MyTestCase(unittest.TestCase):
             pprint(row["mode"])
         self.assertEqual(self.statistics.mode(self.column1), float(row['mode']))
         self.assertEqual(self.statistics.result, float(row['mode']))
+
+    def test_standard_deviation_statistics(self):
+        for row in self.test_answer:
+            pprint(row["stddev"])
+        self.assertEqual(self.statistics.stddev(self.column1), float(row['stddev']))
+        self.assertEqual(self.statistics.result, float(row['stddev']))
+
+    def test_variance_statistics(self):
+        for row in self.test_answer:
+            pprint(row['variance'])
+        self.assertEqual(self.statistics.variance(self.column1), float(row['variance']))
+        self.assertEqual(self.statistics.result, float(row['variance']))
 
 
 if __name__ == '__main__':
