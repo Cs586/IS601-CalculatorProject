@@ -8,6 +8,11 @@ def say_whee():
     print("Whee!")
 
 
+@do_twice
+def say_hello():
+    print("Hello")
+
+
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         pass

@@ -1,12 +1,10 @@
 from collections import Counter
 
 
-def mode(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t):
+def mode(num):
     try:
-        mode_list = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t]
-        float_list = [float(i) for i in mode_list]
-        num_values = len(float_list)
-        count = Counter(float_list)
+        num_values = len(num)
+        count = Counter(num)
         get_mode = dict(count)
         mode = [k for k, v in get_mode.items() if v == max(list(count.values()))]
         if len(mode) == num_values:

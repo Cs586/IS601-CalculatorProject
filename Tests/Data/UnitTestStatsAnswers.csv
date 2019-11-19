@@ -1,2 +1,2 @@
-mean,stddev,median
-9.45,2.011839954,9
+mean,median,mode,stddev,variance
+99.3155,99,101,19.80086,392.07396
