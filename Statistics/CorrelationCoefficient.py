@@ -12,7 +12,3 @@ def correlation(data, data1):
         print("Error: Can't Divide by 0")
     except ValueError:
         print("Error: Check your data inputs")
-
-        # r = Σ(xy) / sqrt[(Σ x2) * (Σ y2)]
-        # where Σ is the summation symbol, x = xi - x, xi is the x value
-        # for observation i, x is the mean x value, y = yi - y, yi is the y value for observation i, and y is the mean y value.

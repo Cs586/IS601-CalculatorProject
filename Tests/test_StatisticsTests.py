@@ -10,8 +10,8 @@ class MyTestCase(unittest.TestCase):
     column1 = [int(row['value1']) for row in test_data]
     column2 = [int(row['value2']) for row in test_data]
     p_answers = CsvReader('Tests/Data/Test_Proportion.csv').data
-    column_proportion = [float(row['Proportion']) for row in p_answers]
     z_answers = CsvReader('Tests/Data/Test_ZScores.csv').data
+    column_proportion = [float(row['Proportion']) for row in p_answers]
     column_zscore = [float(row['Z-Score']) for row in z_answers]
     test_answer = CsvReader('Tests/Data/UnitTestStatsAnswers.csv').data
 
@@ -48,6 +48,12 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statistics.stddev(self.column1), float(row['stddev']))
         self.assertEqual(self.statistics.result, float(row['stddev']))
 
+    def test_proportion_variance_statistics(self):
+        for row in self.test_answer:
+            pprint(row['proportion_variance'])
+        self.assertEqual(self.statistics.population_proportion_variance(self.column1), float(row['proportion_variance']))
+        self.assertEqual(self.statistics.result, float(row['proportion_variance']))
+
     def test_variance_statistics(self):
         for row in self.test_answer:
             pprint(row['variance'])
@@ -65,9 +71,9 @@ class MyTestCase(unittest.TestCase):
         # self.assertEqual(self.statistics.zscore(self.column1), self.column_zscore)
         # self.assertEqual(self.statistics.result, self.column_zscore)
 
-    # def test_proportion_statistics(self):
-        # self.assertEqual(self.statistics.proportion(self.column1), self.column_proportion)
-        # self.assertEqual(self.statistics.result, self.column_proportion)
+    def test_proportion_statistics(self):
+        self.assertEqual(self.statistics.proportion(self.column1), self.column_proportion)
+        self.assertEqual(self.statistics.result, self.column_proportion)
 
 
 if __name__ == '__main__':

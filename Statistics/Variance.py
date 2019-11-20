@@ -10,7 +10,7 @@ def variance(num):
         x = 0
         for i in num:
             x = x + squaring(i-pop_mean)
-        return round(division(x, num_values), 5)
+        return division(x, num_values)
     except ZeroDivisionError:
         print("Error: Can't Divide by 0")
     except ValueError:
