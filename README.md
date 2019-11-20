@@ -25,7 +25,7 @@ Statistical Functions:
 - [x] Variance of population proportion
 - [x] Z-Score
 - [x] Population Correlation Coefficient
-- [ ] Confidence Interval
+- [x] Confidence Interval
 - [x] Population Variance
 - [ ] P Value
 - [x] Proportion

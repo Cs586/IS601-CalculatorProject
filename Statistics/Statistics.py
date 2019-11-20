@@ -8,6 +8,8 @@ from Statistics.Proportion import proportion
 from Statistics.ZScore import zscore
 from Statistics.CorrelationCoefficient import correlation
 from Statistics.VarianceOfPopulationProportion import variance_of_population_proportion
+from Statistics.ConfidenceIntervalTop import confidence_interval_top
+from Statistics.ConfidenceIntervalBottom import confidence_interval_bottom
 from CsvReader.CsvReader import CsvReader
 
 
@@ -51,6 +53,14 @@ class Statistics(Calculator):
 
     def population_proportion_variance(self, data):
         self.result = variance_of_population_proportion(data)
+        return self.result
+
+    def confidence_interval_top(self, data):
+        self.result = confidence_interval_top(data)
+        return self.result
+
+    def confidence_interval_bottom(self, data):
+        self.result = confidence_interval_bottom(data)
         return self.result
 
     pass

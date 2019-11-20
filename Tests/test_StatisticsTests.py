@@ -75,6 +75,13 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statistics.proportion(self.column1), self.column_proportion)
         self.assertEqual(self.statistics.result, self.column_proportion)
 
+    def test_confidence_interval(self):
+        for row in self.test_answer:
+            pprint(row['ci_top'])
+            pprint(row['ci_bottom'])
+        self.assertEqual(self.statistics.confidence_interval_top(self.column1), float(row['ci_top']))
+        self.assertEqual(self.statistics.confidence_interval_bottom(self.column1), float(row['ci_bottom']))
+
 
 if __name__ == '__main__':
     unittest.main()
