@@ -18,21 +18,21 @@ Statistical Functions:
 
 [Link to References Directory](https://github.com/hl533/IS601-CalculatorProject/tree/master/References)
 
-1. Population Mean
-2. Median
-3. Mode
-4. Population Standard Deviation
-5. Variance of population proportion
-6. Z-Score
-7. Standardized score
-8. Population Correlation Coefficient
-9. Confidence Interval
-10. Population Variance
-11. P Value
-12. Proportion
-13. Sample Mean
-14. Sample Standard Deviation
-[] Variance of sample proportion
+- [x] Population Mean
+- [x] Median
+- [x] Mode
+- [x] Population Standard Deviation
+- [x] Variance of population proportion
+- [ ] Z-Score
+- [ ] Standardized score
+- [ ] Population Correlation Coefficient
+- [ ] Confidence Interval
+- [ ] Population Variance
+- [ ] P Value
+- [x] Proportion
+- [ ] Sample Mean
+- [ ] Sample Standard Deviation
+- [ ] Variance of sample proportion
 
 This uses both built-in functions and CSV data sheets to test the 
 functionality of the calculator.

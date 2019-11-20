@@ -5,6 +5,7 @@ from Statistics.StandardDeviation import stddev
 from Statistics.Variance import variance
 from Statistics.PopulationMean import populationmean
 from Statistics.Proportion import proportion
+from Statistics.Z_Score import zscore
 from CsvReader.CsvReader import CsvReader
 
 
@@ -36,6 +37,10 @@ class Statistics(Calculator):
 
     def proportion(self, data):
         self.result = proportion(data)
+        return self.result
+
+    def zscore(self, data):
+        self.result = zscore(data)
         return self.result
 
     pass
