@@ -4,6 +4,7 @@ from Statistics.Mode import mode
 from Statistics.StandardDeviation import stddev
 from Statistics.Variance import variance
 from Statistics.PopulationMean import populationmean
+from Statistics.Proportion import proportion
 from CsvReader.CsvReader import CsvReader
 
 
@@ -31,6 +32,10 @@ class Statistics(Calculator):
 
     def variance(self, data):
         self.result = variance(data)
+        return self.result
+
+    def proportion(self, data):
+        self.result = proportion(data)
         return self.result
 
     pass

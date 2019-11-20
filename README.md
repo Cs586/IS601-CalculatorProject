@@ -32,7 +32,7 @@ Statistical Functions:
 12. Proportion
 13. Sample Mean
 14. Sample Standard Deviation
-15. Variance of sample proportion
+[] Variance of sample proportion
 
 This uses both built-in functions and CSV data sheets to test the 
 functionality of the calculator.
