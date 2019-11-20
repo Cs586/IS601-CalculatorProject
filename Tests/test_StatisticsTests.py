@@ -14,6 +14,9 @@ class MyTestCase(unittest.TestCase):
     column_proportion = [float(row['Proportion']) for row in p_answers]
     column_zscore = [float(row['Z-Score']) for row in z_answers]
     test_answer = CsvReader('Tests/Data/UnitTestStatsAnswers.csv').data
+    sample_data = CsvReader('Tests/Data/Test_Data_Sample.csv').data
+    column3 = [int(row['sample1']) for row in sample_data]
+    sample_answer = CsvReader('Tests/Data/UnitTestSampleAnswers.csv').data
 
     def setUp(self) -> None:
         self.statistics = Statistics()
@@ -81,6 +84,24 @@ class MyTestCase(unittest.TestCase):
             pprint(row['ci_bottom'])
         self.assertEqual(self.statistics.confidence_interval_top(self.column1), float(row['ci_top']))
         self.assertEqual(self.statistics.confidence_interval_bottom(self.column1), float(row['ci_bottom']))
+
+    def test_sample_mean_statistics(self):
+        for row in self.sample_answer:
+            pprint(row["mean"])
+        self.assertEqual(self.statistics.sample_mean(self.column3), float(row['mean']))
+        self.assertEqual(self.statistics.result, float(row['mean']))
+
+    def test_sample_standard_deviation_statistics(self):
+        for row in self.sample_answer:
+            pprint(row["stddev"])
+        self.assertEqual(self.statistics.sample_stddev(self.column3), float(row['stddev']))
+        self.assertEqual(self.statistics.result, float(row['stddev']))
+
+    def test_sample_variance_statistics(self):
+        for row in self.sample_answer:
+            pprint(row['variance'])
+        self.assertEqual(self.statistics.sample_variance(self.column3), float(row['variance']))
+        self.assertEqual(self.statistics.result, float(row['variance']))
 
 
 if __name__ == '__main__':

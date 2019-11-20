@@ -10,6 +10,9 @@ from Statistics.CorrelationCoefficient import correlation
 from Statistics.VarianceOfPopulationProportion import variance_of_population_proportion
 from Statistics.ConfidenceIntervalTop import confidence_interval_top
 from Statistics.ConfidenceIntervalBottom import confidence_interval_bottom
+from Statistics.SampleMean import samplemean
+from Statistics.SampleStandardDeviation import samplestddev
+from Statistics.SampleVariance import samplevariance
 from CsvReader.CsvReader import CsvReader
 
 
@@ -63,4 +66,15 @@ class Statistics(Calculator):
         self.result = confidence_interval_bottom(data)
         return self.result
 
+    def sample_mean(self, data):
+        self.result = samplemean(data)
+        return self.result
+
+    def sample_stddev(self, data):
+        self.result = samplestddev(data)
+        return self.result
+
+    def sample_variance(self, data):
+        self.result = samplevariance(data)
+        return self.result
     pass
