@@ -6,6 +6,7 @@ from Statistics.Variance import variance
 from Statistics.PopulationMean import populationmean
 from Statistics.Proportion import proportion
 from Statistics.ZScore import zscore
+from Statistics.CorrelationCoefficient import correlation
 from CsvReader.CsvReader import CsvReader
 
 
@@ -41,6 +42,10 @@ class Statistics(Calculator):
 
     def zscore(self, data):
         self.result = zscore(data)
+        return self.result
+
+    def correlation_coefficient(self, data, data1):
+        self.result = correlation(data, data1)
         return self.result
 
     pass
