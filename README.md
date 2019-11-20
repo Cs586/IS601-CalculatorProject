@@ -23,8 +23,7 @@ Statistical Functions:
 - [x] Mode
 - [x] Population Standard Deviation
 - [x] Variance of population proportion
-- [ ] Z-Score
-- [ ] Standardized score
+- [x] Z-Score
 - [ ] Population Correlation Coefficient
 - [ ] Confidence Interval
 - [ ] Population Variance

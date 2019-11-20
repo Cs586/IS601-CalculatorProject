@@ -5,7 +5,7 @@ from Statistics.StandardDeviation import stddev
 from Statistics.Variance import variance
 from Statistics.PopulationMean import populationmean
 from Statistics.Proportion import proportion
-from Statistics.Z_Score import zscore
+from Statistics.ZScore import zscore
 from CsvReader.CsvReader import CsvReader
 
 
