@@ -74,6 +74,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statistics.zscore(self.column1), self.column_zscore)
         self.assertEqual(self.statistics.result, self.column_zscore)
 
+    def test_pvalue_statistics(self):
+        self.assertEqual(self.statistics.p_value(self.column1), self.column_zscore)
+        self.assertEqual(self.statistics.result, self.column_zscore)
+
     def test_proportion_statistics(self):
         self.assertEqual(self.statistics.proportion(self.column1), self.column_proportion)
         self.assertEqual(self.statistics.result, self.column_proportion)

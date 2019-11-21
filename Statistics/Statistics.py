@@ -13,6 +13,7 @@ from Statistics.ConfidenceIntervalBottom import confidence_interval_bottom
 from Statistics.SampleMean import samplemean
 from Statistics.SampleStandardDeviation import samplestddev
 from Statistics.SampleVariance import samplevariance
+from Statistics.PValue import pvalue
 from CsvReader.CsvReader import CsvReader
 
 
@@ -70,6 +71,10 @@ class Statistics(Calculator):
         self.result = samplemean(data)
         return self.result
 
+    def p_value(self, data):
+        self.result = pvalue(data)
+        return self.result
+
     def sample_stddev(self, data):
         self.result = samplestddev(data)
         return self.result
@@ -77,4 +82,5 @@ class Statistics(Calculator):
     def sample_variance(self, data):
         self.result = samplevariance(data)
         return self.result
+
     pass
