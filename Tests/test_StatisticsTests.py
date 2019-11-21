@@ -70,9 +70,9 @@ class MyTestCase(unittest.TestCase):
                          float(row['correlation']))
         self.assertEqual(self.statistics.result, float(row['correlation']))
 
-    # def test_zscore_statistics(self):
-        # self.assertEqual(self.statistics.zscore(self.column1), self.column_zscore)
-        # self.assertEqual(self.statistics.result, self.column_zscore)
+    def test_zscore_statistics(self):
+        self.assertEqual(self.statistics.zscore(self.column1), self.column_zscore)
+        self.assertEqual(self.statistics.result, self.column_zscore)
 
     def test_proportion_statistics(self):
         self.assertEqual(self.statistics.proportion(self.column1), self.column_proportion)

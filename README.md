@@ -29,9 +29,9 @@ Statistical Functions:
 - [x] Population Variance
 - [ ] P Value
 - [x] Proportion
-- [ ] Sample Mean
-- [ ] Sample Standard Deviation
-- [ ] Variance of sample proportion
+- [x] Sample Mean
+- [x] Sample Standard Deviation
+- [x] Variance of sample proportion
 
 This uses both built-in functions and CSV data sheets to test the 
 functionality of the calculator.

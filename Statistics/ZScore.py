@@ -8,10 +8,10 @@ from Statistics.StandardDeviation import stddev
 
 def zscore(num):
     zmean = populationmean(num)
-    zstandard_deviation = stddev(num)
-    z_list = []
-    for i in num:
-        z = division((i - zmean), zstandard_deviation)
-        z_list.append(z)
-    return z_list
+    sd = stddev(num)
+    zlist = []
+    for x in num:
+        z = round(((x - zmean) / sd), 6)
+        zlist.append(z)
+    return zlist
 
