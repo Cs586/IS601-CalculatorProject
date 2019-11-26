@@ -33,7 +33,8 @@ class Address(Base):
     post_code = Column(String(250), nullable=False)
     # creates the field to store the person id
     person_id = Column(Integer, ForeignKey('person.id'))
-    # creates the relationship between the person and addresses.  backref adds a property to the Person class to retrieve addresses
+    # creates the relationship between the person and addresses.
+    # backref adds a property to the Person class to retrieve addresses
     person = relationship("Person", backref="addresses")
 
 
@@ -55,6 +56,7 @@ session = DBSession()
 
 # Insert a Person in the person table
 new_person1 = Person(name='Keith')
+# this adds person to the session
 session.add(new_person1)
 
 new_person2 = Person(name='Joe')
@@ -62,6 +64,7 @@ session.add(new_person1)
 
 new_person3 = Person(name='Steve')
 session.add(new_person1)
+# commit saves the changes
 session.commit()
 
 # Insert an Address in the address table using a loop
